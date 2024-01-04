@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Homebrew) (preloaded format=pdflatex 2023.9.21)  3 JAN 2024 15:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Homebrew) (preloaded format=pdflatex 2023.9.21)  4 JAN 2024 11:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**ai.tex
-(./ai.tex
+**a1.tex
+(./a1.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22>
 (/usr/local/Cellar/texlive/20230313_2/share/texmf-dist/tex/latex/ieeetran/IEEEt
@@ -1357,9 +1357,8 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 4
 (/usr/local/Cellar/texlive/20230313_2/share/texmf-dist/tex/latex/txfonts/ot1txr
 .fd
 File: ot1txr.fd 2000/12/15 v3.1
-)
-No file ai.aux.
-\openout1 = `ai.aux'.
+) (./a1.aux)
+\openout1 = `a1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 45.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
@@ -1485,8 +1484,9 @@ LaTeX Info: Redefining \ohm on input line 45.
 Package gensymb Info: Using \textohm for \ohm on input line 45.
 Package gensymb Info: Using \textmu for \micro on input line 45.
 Package hyperref Info: Link coloring OFF on input line 45.
+ (./a1.out) (./a1.out)
 \@outlinefile=\write5
-\openout5 = `ai.out'.
+\openout5 = `a1.out'.
 
 LaTeX Font Info:    Calculating math sizes for size <14> on input line 54.
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 5
@@ -1524,24 +1524,23 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 5
 .fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
+Overfull \hbox (69.82031pt too wide) in paragraph at lines 76--83
+[] 
+ []
+
 <Figure_1.png, id=7, 462.528pt x 346.896pt>
 File: Figure_1.png Graphic file (type png)
 <use Figure_1.png>
-Package pdftex.def Info: Figure_1.png  used on input line 92.
+Package pdftex.def Info: Figure_1.png  used on input line 90.
 (pdftex.def)             Requested size: 289.0934pt x 216.80946pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--93
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
 []\OT1/txr/m/n/12 Plotting the am-pli-tude of the elec-tro-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--93
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
 \OT1/txr/m/n/12 mag-netic wave as a func-tion of time
- []
-
-
-Overfull \hbox (37.0934pt too wide) in paragraph at lines 91--93
-[] 
  []
 
 [1{/usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/map/pdftex/updma
@@ -1549,21 +1548,18 @@ p/pdftex.map}{/usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/enc/d
 vips/base/8r.enc}
 
 
- <./Figure_1.png>] (./ai.aux)
+ <./Figure_1.png>] (./a1.aux)
 
-Package rerunfilecheck Warning: File `ai.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: Checksums for `ai.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `a1.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 31491 strings out of 476025
- 630782 string characters out of 5780533
- 1862388 words of memory out of 5000000
- 51253 multiletter control sequences out of 15000+600000
+ 31499 strings out of 476025
+ 630853 string characters out of 5780533
+ 1864388 words of memory out of 5000000
+ 51255 multiletter control sequences out of 15000+600000
  578996 words of font info for 176 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  101i,11n,96p,1170b,434s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1576,7 +1572,7 @@ hare/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/local/Cellar/texlive/
 lar/texlive/20230313_2/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
 local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on ai.pdf (1 page, 74160 bytes).
+Output written on a1.pdf (1 page, 74714 bytes).
 PDF statistics:
  63 PDF objects out of 1000 (max. 8388607)
  43 compressed objects within 1 object stream
