@@ -10,6 +10,6 @@ y = np.cos(2 * np.pi * 1e9 * t)
 # Plot the graph
 plt.plot(t, y)
 plt.xlabel('Time (s)')
-plt.ylabel('Amplitude of electromagnetic wave')
+plt.ylabel('Displacement(y)')
 plt.grid(True)
 plt.show()
