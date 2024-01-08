@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Homebrew) (preloaded format=pdflatex 2023.9.21)  8 JAN 2024 10:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Homebrew) (preloaded format=pdflatex 2023.9.21)  8 JAN 2024 10:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1524,7 +1524,7 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 5
 .fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-Overfull \hbox (17.72813pt too wide) in paragraph at lines 65--73
+Overfull \hbox (2.10614pt too wide) in paragraph at lines 65--73
  [][] 
  []
 
@@ -1540,9 +1540,6 @@ vips/base/8r.enc}
 
 
  <./Figure_1.png>] (./a1.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `a1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
@@ -1563,7 +1560,7 @@ hare/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/local/Cellar/texlive/
 lar/texlive/20230313_2/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
 local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on a1.pdf (1 page, 74017 bytes).
+Output written on a1.pdf (1 page, 74046 bytes).
 PDF statistics:
  59 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream
