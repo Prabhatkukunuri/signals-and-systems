@@ -62,18 +62,26 @@ Sum of the first p, q and r terms of an A.P. are a, b and c, respectively.
 Prove that $\dfrac{a}{p}(q-r)+\dfrac{b}{q}(r-p)+\dfrac{c}{r}(p-q)=0$
 \section*{Solution}
 \begin{table}[h]
-    \centering
-    \begin{tabular}{|p{2.5cm}|p{2.5cm}|p{2.5cm}|}
-    \hline
-   Symbol&Value&Description\\ \hline
-   $x(n)$&{$\dfrac{n}{2}(2a+(n-1)d)$}&Sum of n terms of an A.P\\ \hline
-   $n$&$p,q,r$&$n^{th}$ term of the sequence\\ \hline
-   $a$&$x(0)$&first term of the sequence\\ \hline
-   $d$&\tiny$x(n+2)-2x(n+1)+x(n)$&common difference\\ \hline
+\centering
+\input{tables/table1}
+\caption{$n^{th}$ term of an A.P}
+\end{table}
+\begin{align}
+	x \brak{n} \system{Z} X \brak{z} 
+\end{align}
 
-    \end{tabular}
+\begin{align}
+    X \brak{z} & = \sum_{n=-\infty}^{\infty} x \brak{n}   z^{-n}\\
+    X \brak{z} & = \sum_{n=-\infty}^{\infty}(x(0)+nd)u(n)z^{-n}\\
+    X \brak{z} & = \sum_{n=0}^{\infty}(x(0)+nd)u(n)z^{-n}\\
+    X \brak{z} & = \brak{x(0)\sum_{n=0}^{\infty}z^{-n}}+\brak{d\sum_{n=0}^{\infty}nz^{-n}}\\
+    X \brak{z} & = x(0)z(z-1)^{-1} + z(z-1)^{-2}
+\end{align}
+\begin{table}[h]
+    \centering
+    \input{tables/table2}
     \caption{Variable description}
-    \label{tab:11.9.2.11}
+    \label{11.9.2.11.2}
 \end{table}
 \begin{align}
     a=\dfrac{p}{2}(2x(0)+(p-1)d)\\
@@ -93,5 +101,5 @@ Assuming $2x(0)-d$ as a constant $k$
     \dfrac{(r-p)}{2}(k+qd) = \dfrac{kr+qrd-pk-pqd}{2}\label{eq:8}\\
     \dfrac{(p-q)}{2}(k+rd) = \dfrac{kp+prd-qk-qrd}{2}\label{eq:9}
 \end{align}
-Upon on addition of \eqref{eq:7}, \eqref{eq:8} and \eqref{eq:9} the total sum adds up to 0.
+Upon on addition of $ \eqref{eq:7}$,$ \eqref{eq:8}$ and$ \eqref{eq:9}$ the total sum adds up to 0.
 \end{document}
