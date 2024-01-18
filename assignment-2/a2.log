@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Homebrew) (preloaded format=pdflatex 2023.9.21)  16 JAN 2024 23:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Homebrew) (preloaded format=pdflatex 2023.9.21)  19 JAN 2024 00:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1459,13 +1459,15 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 5
 (/usr/local/Cellar/texlive/20230313_2/share/texmf-dist/tex/latex/txfonts/ts1txr
 .fd
 File: ts1txr.fd 2000/12/15 v3.1
-) (./tables/table1.tex) (./tables/table2.tex)
+) (./tables/table1.tex
+Underfull \hbox (badness 2173) in paragraph at lines 7--7
+[]|$\OML/txmi/m/it/9 u\OT1/txr/m/n/9 (\OML/txmi/m/it/9 n\OT1/txr/m/n/9 ) = 0$ $
+[]$
+ []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[1{/usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/map/pdftex/updma
-p/pdftex.map}{/usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/enc/d
-vips/base/8r.enc}
+) [1{/usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/map/pdftex/upd
+map/pdftex.map}{/usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/enc
+/dvips/base/8r.enc}
 
 
 ] (./a2.aux)
@@ -1474,12 +1476,12 @@ Package rerunfilecheck Info: File `a2.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  30433 strings out of 476025
- 610699 string characters out of 5780533
- 1892388 words of memory out of 5000000
- 50197 multiletter control sequences out of 15000+600000
+ 610674 string characters out of 5780533
+ 1901388 words of memory out of 5000000
+ 50194 multiletter control sequences out of 15000+600000
  591538 words of font info for 206 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,14n,96p,1170b,434s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,12n,96p,1170b,434s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/public/txf
 onts/rtxmi.pfb></usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/typ
 e1/public/txfonts/rtxr.pfb></usr/local/Cellar/texlive/20230313_2/share/texmf-di
@@ -1489,10 +1491,10 @@ hare/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/local/Cellar/texlive/
 lar/texlive/20230313_2/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
 local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on a2.pdf (1 page, 47192 bytes).
+Output written on a2.pdf (1 page, 47646 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
+ 93 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
+ 26 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
