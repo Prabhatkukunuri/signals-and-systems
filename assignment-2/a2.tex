@@ -63,7 +63,18 @@ Prove that $\dfrac{a}{p}(q-r)+\dfrac{b}{q}(r-p)+\dfrac{c}{r}(p-q)=0$
 \section*{Solution}
 \begin{table}[h]
     \centering
-    \input{tables/table1}
+    \begin{tabular}{|p{2cm}|p{2.80cm}|p{2.70cm}|}
+    \hline
+    Symbol&Value&Description\\ \hline
+    $$x(n)$$&$$(x_0+nd)\times u(n)$$&$$n^{th}$$ term of an A.P\\ \hline
+    $$x_0$$&$$x_0$$&$1^{st}$ term of the A.P\\ \hline
+    $$d$$&$$d$$&Common difference\\ \hline
+    $$u(n)$$&unit step function&$u(n)=0$ \brak {n<0}   $u(n)=1$ \brak {n\geq0}\\ \hline
+    $$y(n)$$&$$\sum_{k=0}^{n} x \brak{k}$$&Sum of n terms of an AP\\ \hline
+    $$a$$&$$y(p-1)$$&Sum of first p terms of the AP\\ \hline
+    $$b$$&$$y(q-1)$$&Sum of first q terms of the AP\\ \hline
+    $$c$$&$$y(r-1)$$&Sum of first r terms of the AP\\ \hline
+\end{tabular}
     \caption{Variable description}
     \label{tab:11.9.2.11.1}
 \end{table}
@@ -122,4 +133,17 @@ Assuming $2x_0-d$ as a constant $k$
     \dfrac{(p-q)}{2}(k+rd) = \dfrac{kp+prd-kq-qrd}{2}\label{eq:33}
 \end{align}
 Upon on addition of \eqref{eq:31}, \eqref{eq:32} and \eqref{eq:33} the total sum adds up to 0.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\columnwidth]{figs/figure_1.png}
+    \caption{Plot of x(n) $vs$ n}
+    \label{fig:11.9.2.11.2}
+\end{figure}
+\begin{table}[ht]
+    \centering
+    \def\arraystretch{1.5}
+    \input{tables/table2.tex}
+    \caption{Verified Values}
+    \label{tab:11.9.2.11.3}
+\end{table}
 \end{document}
