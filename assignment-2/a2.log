@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Homebrew) (preloaded format=pdflatex 2023.9.21)  29 JAN 2024 23:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Homebrew) (preloaded format=pdflatex 2023.9.21)  29 JAN 2024 23:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1468,22 +1468,19 @@ Underfull \hbox (badness 2173) in paragraph at lines 72--72
 
 Underfull \vbox (badness 2096) has occurred while \output is active []
 
-
-Underfull \vbox (badness 1917) has occurred while \output is active []
-
  [1{/usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/map/pdftex/updm
 ap/pdftex.map}{/usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/enc/
 dvips/base/8r.enc}
 
 
 ]
-<figs/figure_1.png, id=39, 462.528pt x 346.896pt>
+<figs/figure_1.png, id=41, 462.528pt x 346.896pt>
 File: figs/figure_1.png Graphic file (type png)
 <use figs/figure_1.png>
-Package pdftex.def Info: figs/figure_1.png  used on input line 138.
+Package pdftex.def Info: figs/figure_1.png  used on input line 137.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
  (./tables/table2.tex)
-Overfull \hbox (29.27478pt too wide) in paragraph at lines 1--146
+Overfull \hbox (29.27478pt too wide) in paragraph at lines 1--145
  [][] 
  []
 
@@ -1497,21 +1494,29 @@ Package rerunfilecheck Info: File `a2.out' has not changed.
 Here is how much of TeX's memory you used:
  30458 strings out of 476025
  611017 string characters out of 5780533
- 1894388 words of memory out of 5000000
+ 1899388 words of memory out of 5000000
  50201 multiletter control sequences out of 15000+600000
  591538 words of font info for 206 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  101i,12n,96p,1170b,445s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/public/txf
-onts/rtxmi.pfb></usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/typ
-e1/public/txfonts/rtxr.pfb></usr/local/Cellar/texlive/20230313_2/share/texmf-di
-st/fonts/type1/public/txfonts/rtxsc.pfb></usr/local/Cellar/texlive/20230313_2/s
-hare/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/local/Cellar/texlive/
-20230313_2/share/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/Cel
-lar/texlive/20230313_2/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
-local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/urw/times/utmri8a.
-pfb>
-Output written on a2.pdf (2 pages, 74273 bytes).
+
+pdfTeX warning (dest): name{equation.0.33} has been referenced but does not exi
+st, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{equation.0.32} has been referenced but does not exi
+st, replaced by a fixed one
+
+</usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/public/txfon
+ts/rtxmi.pfb></usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1
+/public/txfonts/rtxr.pfb></usr/local/Cellar/texlive/20230313_2/share/texmf-dist
+/fonts/type1/public/txfonts/rtxsc.pfb></usr/local/Cellar/texlive/20230313_2/sha
+re/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/local/Cellar/texlive/20
+230313_2/share/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/Cella
+r/texlive/20230313_2/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/lo
+cal/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/urw/times/utmri8a.pf
+b>
+Output written on a2.pdf (2 pages, 74159 bytes).
 PDF statistics:
  109 PDF objects out of 1000 (max. 8388607)
  88 compressed objects within 1 object stream
