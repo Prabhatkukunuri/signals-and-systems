@@ -24,11 +24,11 @@ int main()
     fclose(file);
 
     // Assume specific values for p, q, r, a, and d
-    int p = 3;
-    int q = 5;
-    int r = 7;
-    int x = 2;
-    int y = 3;
+    int p = rand()%10+1;
+    int q = rand()%10+1;
+    int r = rand()%10+1;
+    int x = 5;
+    int y = 2;
 
     // Calculate the sum of the first p, q, and r terms of the arithmetic progression
     int sum_a = p * (2 * x + (p - 1) * y) / 2;
