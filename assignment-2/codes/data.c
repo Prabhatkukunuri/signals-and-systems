@@ -4,9 +4,9 @@
 int main() 
 {
 
-    // Generate random values for a (first term) and d (common difference)
-    int a = 5; // Random value between 0 and 9
-    int d = 2; // Random value between 1 and 5
+    // Generate random values for x (first term) and y (common difference)
+    int x = 5; // Random value between 0 and 9
+    int y = 2; // Random value between 1 and 5
 
     int n = 10; // Number of terms
 
@@ -17,7 +17,7 @@ int main()
     }
 
     for (int i = 0; i <= n; ++i) {
-        int term = a + (i) * d;
+        int term = x + (i) * y;
         fprintf(file, "%d %d\n", i, term);
     }
 
@@ -27,8 +27,6 @@ int main()
     int p = rand()%10+1;
     int q = rand()%10+1;
     int r = rand()%10+1;
-    int x = 5;
-    int y = 2;
 
     // Calculate the sum of the first p, q, and r terms of the arithmetic progression
     int sum_a = p * (2 * x + (p - 1) * y) / 2;
@@ -40,7 +38,7 @@ int main()
 
     printf("Assumed values:\n");
     printf("p: %d\nq: %d\nr: %d\n", p, q, r);
-    printf("Sum of first %d terms:\na=%d\nb=%d\nc=%d\n", p, sum_a, sum_b, sum_c);
+    printf("\na=%d\nb=%d\nc=%d\n",sum_a, sum_b, sum_c);
     printf("Expression result: %f\n", expression_result);
 
     return 0;
