@@ -68,21 +68,16 @@ Prove that $\dfrac{a}{p}(q-r)+\dfrac{b}{q}(r-p)+\dfrac{c}{r}(p-q)=0$
     \label{tab:11.9.2.11.1}
 \end{table}
 \begin{align}
-	x \brak{n} &\system{Z} X \brak{z} \\
-    X \brak{z} &= \sum_{n=-\infty}^{\infty} x \brak{n}   z^{-n}\\
-    X \brak{z} & = \sum_{n=-\infty}^{\infty}(x(0)+nd)u(n)z^{-n}\\
-    u \brak{n} &\system{Z} U \brak{z} = \dfrac{1}{1-z^{-1}}, |z|>1\\
-    X \brak{z} & = \dfrac{x(0)}{1-z^{-1}} + \dfrac{dz^{-1}}{(1-z^{-1})^{2}}\\
     y \brak{n} &\system{Z} Y \brak{z}\\
-    Y\brak{z}&=\sum_{n=-\infty}^{\infty}y(n)z^{-n}\\
-    y\brak{n}&=x\brak{n}\ast u\brak{n}\\
     Y\brak{z}&=X\brak{z}U\brak{z}\\
     Y\brak{z}&=\brak{\dfrac{x(0)}{1-z^{-1}} + \dfrac{dz^{-1}}{(1-z^{-1})^{2}}}\brak{\dfrac{1}{1-z^{-1}}}, |z|>1
  \end{align}
- By performing Z transform on Y\brak{z} using contour integration we get,
+ By performing inverse Z transform on Y\brak{z} we get,
 \begin{align}
-    y\brak{n}&=x\brak{0}\brak{n+1}u\brak{n}+d\brak{\dfrac{{n\brak{n+1}}}{2}}u\brak{n}\\
-    y\brak{n}&=\dfrac{n+1}{2}\brak{2x\brak{0}+nd}u\brak{n}\\
+    y\brak{n}&=\dfrac{n+1}{2}\brak{2x\brak{0}+nd}u\brak{n}
+\end{align}
+Using y\brak{n},
+\begin{align}
     a&=\dfrac{p}{2}(2x(0)+(p-1)d)\\
     b&=\dfrac{q}{2}(2x(0)+(q-1)d)\\
     c&=\dfrac{r}{2}(2x(0)+(r-1)d)
