@@ -59,7 +59,7 @@
 \section*{Question}
 Sum of the first p, q and r terms of an A.P. are a, b and c, respectively.
 
-Prove that $\dfrac{a}{p}(q-r)+\dfrac{b}{q}(r-p)+\dfrac{c}{r}(p-q)=0$
+Prove that $\dfrac{a}{p}\brak{q-r}+\dfrac{b}{q}\brak{r-p}+\dfrac{c}{r}\brak{p-q}=0$
 \section*{Solution}
 \begin{table}[h]
     \centering
@@ -68,37 +68,84 @@ Prove that $\dfrac{a}{p}(q-r)+\dfrac{b}{q}(r-p)+\dfrac{c}{r}(p-q)=0$
     \label{tab:11.9.2.11.1}
 \end{table}
 \begin{align}
-    y \brak{n} &\system{Z} Y \brak{z}\\
-    Y\brak{z}&=X\brak{z}U\brak{z}\\
-    Y\brak{z}&=\brak{\dfrac{x(0)}{1-z^{-1}} + \dfrac{dz^{-1}}{(1-z^{-1})^{2}}}\brak{\dfrac{1}{1-z^{-1}}}, |z|>1
- \end{align}
- By performing inverse Z transform on Y\brak{z} we get,
-\begin{align}
     y\brak{n}&=\dfrac{n+1}{2}\brak{2x\brak{0}+nd}u\brak{n}
 \end{align}
 Using y\brak{n},
 \begin{align}
-    a&=\dfrac{p}{2}(2x(0)+(p-1)d)\\
-    b&=\dfrac{q}{2}(2x(0)+(q-1)d)\\
-    c&=\dfrac{r}{2}(2x(0)+(r-1)d)
+    a&=\dfrac{p}{2}\brak{2x\brak{0}+\brak{p-1}d}\label{eq:2}\\
+    b&=\dfrac{q}{2}\brak{2x\brak{0}+\brak{q-1}d}\label{eq:3}\\
+    c&=\dfrac{r}{2}\brak{2x\brak{0}+\brak{r-1}d}\label{eq:4}
 \end{align}
-Back substituting values into the term $\dfrac{a}{p}(q-r)$ it can be rewritten as $\brak{\dfrac{p}{2}}\brak{\dfrac{1}{p}(q-r)(2x(0)+(p-1)d)}$
-
-On further simplification it can be rewritten as 
+The equations \eqref{eq:2},\eqref{eq:3} and \eqref{eq:4} can be represented as,
 \begin{align}
-    \dfrac{(q-r)}{2}(2x(0)-d+pd)
+    \begin{bmatrix}
+        x\brak{0}\\
+        d\\
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        1&\frac{p-1}{2}&\frac{a}{p}\\
+        1&\frac{q-1}{2}&\frac{b}{q}\\
+        1&\frac{r-1}{2}&\frac{c}{r}\\
+    \end{bmatrix}
 \end{align}
-Assuming $2x(0)-d$ as a constant $k$
+Performing row reduction,
 \begin{align}
-    \dfrac{a}{p}(q-r) = \dfrac{(q-r)}{2}(k+pd)\\
-    \dfrac{(q-r)}{2}(k+pd) = \dfrac{kq+pqd-kr-prd}{2}\label{eq:31}\\
-    \dfrac{(r-p)}{2}(k+qd) = \dfrac{kr+qrd-kp-pqd}{2}\label{eq:32}\\
-    \dfrac{(p-q)}{2}(k+rd) = \dfrac{kp+prd-kq-qrd}{2}\label{eq:33}
+    \xrightarrow[R_{2}=R_{2}-R_{1}]{R_{3}=R_{3}-R_{1}}\begin{bmatrix}
+        x\brak{0}\\
+        d\\
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        1&\frac{p-1}{2}&\frac{a}{p}\\
+        0&\frac{q-p}{2}&\frac{b}{q}-\frac{a}{p}\\
+        0&\frac{r-p}{2}&\frac{c}{r}-\frac{a}{p}\\
+    \end{bmatrix}\\
+    \xrightarrow{R_2=\frac{R_{2}}{\frac{q-p}{2}}}\begin{bmatrix}
+        x\brak{0}\\
+        d\\
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        1&\frac{p-1}{2}&\frac{a}{p}\\
+        0&1&\brak{\frac{b}{q}-\frac{a}{p}}\frac{2}{q-p}\\
+        0&\frac{r-p}{2}&\frac{c}{r}-\frac{a}{p}\\
+    \end{bmatrix}\\
+    \xrightarrow[R_{1}=R_{1}-\frac{p-1}{2}R_{2}]{R_{3}=R_{3}-\frac{r-p}{2}R_{2}}
+    \begin{bmatrix}
+        1&0&\frac{a}{p}-\frac{\brak{\frac{b}{q}-\frac{a}{p}}\brak{p-1}}{q-p}\\
+        0&1&\brak{\frac{b}{q}-\frac{a}{p}}\frac{2}{q-p}\\
+        0&0&\brak{\frac{c}{r}-\frac{a}{p}}-\frac{\brak{\frac{b}{q}-\frac{a}{p}}\brak{r-p}}{q-p}\\
+    \end{bmatrix}\\
+    \implies
+    \begin{bmatrix}
+        1&0&\frac{aq\brak{q-1}-bp\brak{p-1}}{pq\brak{q-p}}\\
+        0&1&\brak{\frac{b}{q}-\frac{a}{p}}\frac{2}{q-p}\\
+        0&0&\frac{\frac{a}{p}\brak{r-q}+\frac{b}{q}\brak{p-r}+\frac{c}{r}\brak{q-p}}{q-p}\\
+    \end{bmatrix}
 \end{align}
-Upon on addition of \eqref{eq:31}, \eqref{eq:32} and \eqref{eq:33} the total sum adds up to 0.
+Effectively the third row of the matrix can be written as,
+\begin{align}
+    0+0=\frac{\frac{a}{p}\brak{r-q}+\frac{b}{q}\brak{p-r}+\frac{c}{r}\brak{q-p}}{q-p}
+\end{align}
+For the equations to be consistent,
+\begin{align}
+    {\frac{a}{p}\brak{q-r}+\frac{b}{q}\brak{r-p}+\frac{c}{r}\brak{p-q}}=0
+\end{align}
+Effectively the second row of the matrix can be written as,
+\begin{align}
+    &d=\brak{\frac{b}{q}-\frac{a}{p}}\frac{2}{q-p}
+\end{align}
+Effectively the first row of the matrix can be written as,
+\begin{align}
+    &x\brak{0}=\frac{aq\brak{q-1}-bp\brak{p-1}}{pq\brak{q-p}}\\
+    &x \brak{n} \system{Z} X \brak{z}\\
+    &X\brak{z}=\frac{aq\brak{q-1}-bp\brak{p-1}}{pq\brak{q-p}\brak{1-z^{-1}}}x\brak{0}+\frac{2\brak{\frac{b}{q}-\frac{a}{p}}z^{-1}}{\brak{q-p}\brak{1-z^{-1}}^{2}}d\\
+    &R.O.C\brak{|z|>1}
+\end{align}
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=\columnwidth]{figs/figure_1.png}
+    \includegraphics[width=\columnwidth]{figs/Figure_1.png}
     \caption{Plot of x(n) $vs$ n}
     \label{fig:11.9.2.11.2}
 \end{figure}
