@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Homebrew) (preloaded format=pdflatex 2023.9.21)  7 FEB 2024 17:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Homebrew) (preloaded format=pdflatex 2023.9.21)  7 FEB 2024 23:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1465,17 +1465,17 @@ e/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 
 ]
-Overfull \hbox (21.6538pt too wide) detected at line 145
+Overfull \hbox (21.6538pt too wide) detected at line 140
 []
  []
 
-<figs/Figure_1.png, id=35, 462.528pt x 346.896pt>
+<figs/Figure_1.png, id=37, 462.528pt x 346.896pt>
 File: figs/Figure_1.png Graphic file (type png)
 <use figs/Figure_1.png>
-Package pdftex.def Info: figs/Figure_1.png  used on input line 148.
+Package pdftex.def Info: figs/Figure_1.png  used on input line 143.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
 (./tables/table2.tex)
-Overfull \hbox (29.27478pt too wide) in paragraph at lines 1--156
+Overfull \hbox (29.27478pt too wide) in paragraph at lines 1--151
  [][] 
  []
 
@@ -1484,13 +1484,13 @@ Package rerunfilecheck Info: File `a2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30446 strings out of 476025
- 610881 string characters out of 5780533
- 1914388 words of memory out of 5000000
+ 30447 strings out of 476025
+ 610894 string characters out of 5780533
+ 1917388 words of memory out of 5000000
  50203 multiletter control sequences out of 15000+600000
  591538 words of font info for 206 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,18n,96p,1170b,445s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,18n,96p,1170b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/public/txf
 onts/rtxmi.pfb></usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/typ
 e1/public/txfonts/rtxr.pfb></usr/local/Cellar/texlive/20230313_2/share/texmf-di
@@ -1500,10 +1500,10 @@ hare/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/local/Cellar/texlive/
 lar/texlive/20230313_2/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
 local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on a2.pdf (2 pages, 67079 bytes).
+Output written on a2.pdf (2 pages, 67611 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
- 24 named destinations out of 1000 (max. 500000)
+ 89 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
+ 25 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
