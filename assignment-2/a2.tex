@@ -83,47 +83,47 @@ The equations \eqref{eq:2},\eqref{eq:3} and \eqref{eq:4} can be represented as,
         d\\
     \end{bmatrix}
     =
-    \begin{bmatrix}
+    \left[\begin{array}{c c|c}
         1&\frac{p-1}{2}&\frac{a}{p}\\
         1&\frac{q-1}{2}&\frac{b}{q}\\
         1&\frac{r-1}{2}&\frac{c}{r}\\
-    \end{bmatrix}
+    \end{array}\right]
 \end{align}
 Performing row reduction,
 \begin{align}
-    \xrightarrow[R_{2}=R_{2}-R_{1}]{R_{3}=R_{3}-R_{1}}\begin{bmatrix}
-        x\brak{0}\\
-        d\\
-    \end{bmatrix}
-    =
-    \begin{bmatrix}
-        1&\frac{p-1}{2}&\frac{a}{p}\\
-        0&\frac{q-p}{2}&\frac{b}{q}-\frac{a}{p}\\
-        0&\frac{r-p}{2}&\frac{c}{r}-\frac{a}{p}\\
-    \end{bmatrix}\\
-    \xrightarrow{R_2=\frac{R_{2}}{\frac{q-p}{2}}}\begin{bmatrix}
-        x\brak{0}\\
-        d\\
-    \end{bmatrix}
-    =
-    \begin{bmatrix}
-        1&\frac{p-1}{2}&\frac{a}{p}\\
-        0&1&\brak{\frac{b}{q}-\frac{a}{p}}\frac{2}{q-p}\\
-        0&\frac{r-p}{2}&\frac{c}{r}-\frac{a}{p}\\
-    \end{bmatrix}\\
-    \xrightarrow[R_{1}=R_{1}-\frac{p-1}{2}R_{2}]{R_{3}=R_{3}-\frac{r-p}{2}R_{2}}
-    \begin{bmatrix}
-        1&0&\frac{a}{p}-\frac{\brak{\frac{b}{q}-\frac{a}{p}}\brak{p-1}}{q-p}\\
-        0&1&\brak{\frac{b}{q}-\frac{a}{p}}\frac{2}{q-p}\\
-        0&0&\brak{\frac{c}{r}-\frac{a}{p}}-\frac{\brak{\frac{b}{q}-\frac{a}{p}}\brak{r-p}}{q-p}\\
-    \end{bmatrix}\\
-    \implies
-    \begin{bmatrix}
-        1&0&\frac{aq\brak{q-1}-bp\brak{p-1}}{pq\brak{q-p}}\\
-        0&1&\brak{\frac{b}{q}-\frac{a}{p}}\frac{2}{q-p}\\
-        0&0&\frac{\frac{a}{p}\brak{r-q}+\frac{b}{q}\brak{p-r}+\frac{c}{r}\brak{q-p}}{q-p}\\
-    \end{bmatrix}
-\end{align}
+    \xrightarrow[R_{2}=R_{2}-R_{1}]{R_{3}=R_{3}-R_{1}} \begin{bmatrix}
+         x(0)\\
+         d\\
+     \end{bmatrix}
+     =
+     \left[\begin{array}{c c|c}
+         1&\frac{p-1}{2}&\frac{a}{p}\\
+         0&\frac{q-p}{2}&\frac{b}{q}-\frac{a}{p}\\
+         0&\frac{r-p}{2}&\frac{c}{r}-\frac{a}{p}\\
+     \end{array}\right]\\
+     \xrightarrow{R_2=\frac{R_{2}}{\frac{q-p}{2}}}\begin{bmatrix}
+         x(0)\\
+         d\\
+     \end{bmatrix}
+     =
+     \left[\begin{array}{c c|c}
+         1&\frac{p-1}{2}&\frac{a}{p}\\
+         0&1&\brak{\frac{b}{q}-\frac{a}{p}}\frac{2}{q-p}\\
+         0&\frac{r-p}{2}&\frac{c}{r}-\frac{a}{p}\\
+     \end{array}\right]\\
+     \xrightarrow[R_{1}=R_{1}-\frac{p-1}{2}R_{2}]{R_{3}=R_{3}-\frac{r-p}{2}R_{2}}
+     \left[\begin{array}{c c|c}
+         1&0&\frac{a}{p}-\frac{\brak{\frac{b}{q}-\frac{a}{p}}\brak{p-1}}{q-p}\\
+         0&1&\brak{\frac{b}{q}-\frac{a}{p}}\frac{2}{q-p}\\
+         0&0&\brak{\frac{c}{r}-\frac{a}{p}}-\frac{\brak{\frac{b}{q}-\frac{a}{p}}\brak{r-p}}{q-p}\\
+     \end{array}\right]\\
+     \implies
+     \left[\begin{array}{c c|c}
+         1&0&\frac{aq\brak{q-1}-bp\brak{p-1}}{pq\brak{q-p}}\\
+         0&1&\brak{\frac{b}{q}-\frac{a}{p}}\frac{2}{q-p}\\
+         0&0&\frac{\frac{a}{p}\brak{r-q}+\frac{b}{q}\brak{p-r}+\frac{c}{r}\brak{q-p}}{q-p}\\
+     \end{array}\right]
+ \end{align}
 Effectively the third row of the matrix can be written as,
 \begin{align}
     0+0=\frac{\frac{a}{p}\brak{r-q}+\frac{b}{q}\brak{p-r}+\frac{c}{r}\brak{q-p}}{q-p}
