@@ -76,14 +76,17 @@ Using y\brak{n},
     b&=\dfrac{q}{2}\brak{2x\brak{0}+\brak{q-1}d}\label{eq:3}\\
     c&=\dfrac{r}{2}\brak{2x\brak{0}+\brak{r-1}d}\label{eq:4}
 \end{align}
-The equations \eqref{eq:2},\eqref{eq:3} and \eqref{eq:4} can be represented using an augmented matrix,
+The equations \eqref{eq:2},\eqref{eq:3} and \eqref{eq:4} can be represented using an matrix equation,
 \begin{align}
-    \myvec{
-        x(0)\\
-        d\\
-    }
+    \myvec{p&\frac{p\brak{p-1}}{2}\\q&\frac{q\brak{q-1}}{2}\\r&\frac{r\brak{r-1}}{2}\\}
+    \myvec{x(0)\\d\\}
     =
-   \myvec{
+    \myvec{a\\b\\c\\}\label{eq:5}
+\end{align}
+Using an augmented matrix to represent the matrix equation,
+\begin{align}
+   \xrightarrow[]{}
+    \myvec{
         p&\frac{p\brak{p-1}}{2}&a\\
         q&\frac{q\brak{q-1}}{2}&b\\
         r&\frac{r\brak{r-1}}{2}&c\\
