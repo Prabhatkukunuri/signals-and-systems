@@ -102,7 +102,9 @@ Using an augmented matrix to represent the matrix equation,
         1&\frac{p-1}{2}&\frac{a}{p}\\
         0&\frac{q-p}{2}&\frac{b}{q}-\frac{a}{p}\\
         0&\frac{r-p}{2}&\frac{c}{r}-\frac{a}{p}\\
-    }\\
+    }
+\end{align}
+\begin{align}
     \xrightarrow{R_2=\frac{R_{2}}{\frac{q-p}{2}}}
     \myvec{
         1&\frac{p-1}{2}&\frac{a}{p}\\
@@ -120,25 +122,27 @@ Using an augmented matrix to represent the matrix equation,
         1&0&\frac{aq\brak{q-1}-bp\brak{p-1}}{pq\brak{q-p}}\\
         0&1&\brak{\frac{b}{q}-\frac{a}{p}}\frac{2}{q-p}\\
         0&0&\frac{\frac{a}{p}\brak{r-q}+\frac{b}{q}\brak{p-r}+\frac{c}{r}\brak{q-p}}{q-p}\\
-    }
+    }\\
+    \myvec{
+        x(0)\\d\\0}=\myvec{\frac{aq\brak{q-1}-bp\brak{p-1}}{pq\brak{q-p}}\\
+        \brak{\frac{b}{q}-\frac{a}{p}}\frac{2}{q-p}\\
+        \frac{\frac{a}{p}\brak{r-q}+\frac{b}{q}\brak{p-r}+\frac{c}{r}\brak{q-p}}{q-p}\\
+        }
 \end{align}
-Effectively the third row of the matrix can be written as,
 \begin{align}
-    0+0=\frac{\frac{a}{p}\brak{r-q}+\frac{b}{q}\brak{p-r}+\frac{c}{r}\brak{q-p}}{q-p}
+    \frac{\frac{a}{p}\brak{r-q}+\frac{b}{q}\brak{p-r}+\frac{c}{r}\brak{q-p}}{q-p}=0
 \end{align}
 For the equations to be consistent,
 \begin{align}
     {\frac{a}{p}\brak{q-r}+\frac{b}{q}\brak{r-p}+\frac{c}{r}\brak{p-q}}=0
 \end{align}
-Effectively the second row of the matrix can be written as,
 \begin{align}
     &d=\brak{\frac{b}{q}-\frac{a}{p}}\frac{2}{q-p}
 \end{align}
-Effectively the first row of the matrix can be written as,
 \begin{align}
     &x\brak{0}=\frac{aq\brak{q-1}-bp\brak{p-1}}{pq\brak{q-p}}\\
     &x \brak{n} \system{Z} X \brak{z}\\
-    &X\brak{z}=\frac{aq\brak{q-1}-bp\brak{p-1}}{pq\brak{q-p}\brak{1-z^{-1}}}x\brak{0}+\frac{2\brak{\frac{b}{q}-\frac{a}{p}}z^{-1}}{\brak{q-p}\brak{1-z^{-1}}^{2}}d\\
+    &X\brak{z}=\frac{aq\brak{q-1}-bp\brak{p-1}}{pq\brak{q-p}\brak{1-z^{-1}}}+\frac{2\brak{\frac{b}{q}-\frac{a}{p}}z^{-1}}{\brak{q-p}\brak{1-z^{-1}}^{2}}\\
     &R.O.C\brak{|z|>1}
 \end{align}
 \begin{figure}[ht]

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Homebrew) (preloaded format=pdflatex 2023.9.21)  9 FEB 2024 20:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Homebrew) (preloaded format=pdflatex 2023.9.21)  9 FEB 2024 20:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1459,23 +1459,22 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 5
 (/usr/local/Cellar/texlive/20230313_2/share/texmf-dist/tex/latex/txfonts/ts1txr
 .fd
 File: ts1txr.fd 2000/12/15 v3.1
-) (./tables/table1.tex) [1{/usr/local/Cellar/texlive/20230313_2/share/texmf-dis
-t/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/Cellar/texlive/20230313_2/shar
-e/texmf-dist/fonts/enc/dvips/base/8r.enc}
+) (./tables/table1.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1{/usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/map/pdftex/updm
+ap/pdftex.map}{/usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/enc/
+dvips/base/8r.enc}
 
 
 ]
-Overfull \hbox (21.6538pt too wide) detected at line 143
-[]
- []
-
-<figs/Figure_1.png, id=36, 462.528pt x 346.896pt>
+<figs/Figure_1.png, id=33, 462.528pt x 346.896pt>
 File: figs/Figure_1.png Graphic file (type png)
 <use figs/Figure_1.png>
-Package pdftex.def Info: figs/Figure_1.png  used on input line 146.
+Package pdftex.def Info: figs/Figure_1.png  used on input line 150.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
-(./tables/table2.tex)
-Overfull \hbox (29.27478pt too wide) in paragraph at lines 1--154
+ (./tables/table2.tex)
+Overfull \hbox (29.27478pt too wide) in paragraph at lines 1--158
  [][] 
  []
 
@@ -1484,9 +1483,9 @@ Package rerunfilecheck Info: File `a2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30449 strings out of 476025
- 610913 string characters out of 5780533
- 1919388 words of memory out of 5000000
+ 30450 strings out of 476025
+ 610926 string characters out of 5780533
+ 1906388 words of memory out of 5000000
  50204 multiletter control sequences out of 15000+600000
  591538 words of font info for 206 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1500,10 +1499,10 @@ hare/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/local/Cellar/texlive/
 lar/texlive/20230313_2/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
 local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on a2.pdf (2 pages, 67469 bytes).
+Output written on a2.pdf (2 pages, 67549 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
- 26 named destinations out of 1000 (max. 500000)
+ 91 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
+ 27 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
