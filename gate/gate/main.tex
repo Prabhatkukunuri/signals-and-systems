@@ -56,44 +56,45 @@
 
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
-\section*{Question}
+\section{Question}
 The discrete-time Fourier transform of a signal x\sbrak{n} is $X\brak{\Omega}=\brak{1+\cos{\Omega}}e^{-j\Omega}$. Consider that $x_{p}\sbrak{n}$ is a periodic signal of period $N=5$ such that
 \begin{align}
     x_p\sbrak{n}&=x[n],\text{for n= 0, 1, 2}\\
     &=0,\text{for n= 3, 4}
 \end{align}
 Note that $x_p\sbrak{n}=\sum_{k=0}^{N-1}a_{k}e^{j\frac{2\pi}{N}kn}$. The magnitude of the Fourier series coefficient $a_3$ is \rule{3cm}{0.15mm} \brak{\text{Round off to 3 decimal places}}.\\
-\solution\\
-\begin{align}
-    X\brak{\Omega}=\brak{1+\cos{\Omega}}e^{-j\Omega}
-\end{align}
+\solution
+\begin{table}[h]
+    \centering
+    \input{tables/table1.tex}
+    \caption{variable description}
+    \label{tab:my_label}
+\end{table}
 Using Euler's form of representation of complex numbers,
 \begin{align}
-    e^{j\Omega}=\cos{\Omega}+j\sin{\Omega}\\
-    \cos{\Omega}=\frac{e^{j\Omega}}{2}+\frac{e^{-j\Omega}}{2}
+    e^{j\Omega}=\cos{\Omega}+j\sin{\Omega}
 \end{align}
 $X\brak{\Omega}$ can be expressed as,
 \begin{align}
     X\brak{\Omega}=\brak{1+\frac{e^{j\Omega}}{2}+\frac{e^{-j\Omega}}{2}}e^{-j\Omega}\\
     X\brak{\Omega}=\frac{1}{2}+e^{-j\Omega}+\frac{e^{-j2\Omega}}{2}
 \end{align}
-From DTFT(discrete time fourier transform) we get,
+As sampling frequency is $1Hz$ \brak{\omega=\Omega} from DTFT(discrete time fourier transform) we get,
 \begin{align}
     X\brak{\Omega}=\sum^{\infty}_{n=-\infty}x\brak{n}e^{-j\omega n},   \omega \in \brak{-\pi,\pi}
 \end{align}
 On comparing coefficients we get,
 \begin{align}
-    x\brak{n}=
+    x\brak{n}&=
     \begin{cases}
         \dfrac{1}{2} & \text{if n=0}\\
         1 & \text{if n=1}\\
         \dfrac{1}{2} & \text{if n=2}\\
         0 & \text{if n$\neq$\cbrak{0,1,2} }
     \end{cases}\\
-    x_{p}\brak{n}=\sbrak{\frac{1}{2},1,\frac{1}{2},0,0} \text{with period, N=5}\\
-    a_k=\frac{1}{N}\sum^{N-1}_{n=0}x\brak{n}e^{-\frac{j2\pi}{N}kn}\\
-    a_3=\frac{1}{5}\sum^{4}_{n=0}x\brak{n}e^{-\frac{j6\pi}{5}n}\\
-    |a_3|=0.038
+    x_{p}\brak{n}&=\sbrak{\frac{1}{2},1,\frac{1}{2},0,0} \text{with period, N=5}\\
+    a_3&=\frac{1}{5}\sum^{4}_{n=0}x\brak{n}e^{-\frac{j6\pi}{5}n}\\
+    |a_3|&=0.038
 \end{align}
 \begin{figure}[ht]
     \centering
