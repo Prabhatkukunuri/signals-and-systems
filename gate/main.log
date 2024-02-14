@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Homebrew) (preloaded format=pdflatex 2023.9.21)  12 FEB 2024 23:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Homebrew) (preloaded format=pdflatex 2023.9.21)  14 FEB 2024 15:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1459,38 +1459,52 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 5
 (/usr/local/Cellar/texlive/20230313_2/share/texmf-dist/tex/latex/txfonts/ts1txr
 .fd
 File: ts1txr.fd 2000/12/15 v3.1
-)
-Underfull \hbox (badness 10000) in paragraph at lines 64--67
+) (./tables/table1.tex)
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 80--82
+\OT1/txr/m/n/12 As sam-pling fre-quency is $1\OML/txmi/m/it/12 Hz$ $[]$ \OT1/tx
+r/m/n/12 from
  []
 
-<figs/Figure_1.png, id=7, 462.528pt x 346.896pt>
+<figs/Figure_1.png, id=11, 462.528pt x 346.896pt>
 File: figs/Figure_1.png Graphic file (type png)
 <use figs/Figure_1.png>
-Package pdftex.def Info: figs/Figure_1.png  used on input line 100.
+Package pdftex.def Info: figs/Figure_1.png  used on input line 101.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
-<figs/Figure_2.png, id=9, 462.528pt x 346.896pt>
+<figs/Figure_2.png, id=13, 462.528pt x 346.896pt>
 File: figs/Figure_2.png Graphic file (type png)
 <use figs/Figure_2.png>
-Package pdftex.def Info: figs/Figure_2.png  used on input line 106.
+Package pdftex.def Info: figs/Figure_2.png  used on input line 107.
+(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
+<figs/Figure_3.png, id=14, 462.528pt x 346.896pt>
+File: figs/Figure_3.png Graphic file (type png)
+<use figs/Figure_3.png>
+Package pdftex.def Info: figs/Figure_3.png  used on input line 113.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
 [1{/usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/map/pdftex/updma
 p/pdftex.map}{/usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/enc/d
 vips/base/8r.enc}
 
 
- <./figs/Figure_1.png>] [2
+] [2
 
- <./figs/Figure_2.png>] (./main.aux)
+ <./figs/Figure_1.png> <./figs/Figure_2.png> <./figs/Figure_3.png>] (./main.aux
+)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 8D0F20C5454CB7D8400B769D7C310636;83.
  ) 
 Here is how much of TeX's memory you used:
- 30433 strings out of 476025
- 610765 string characters out of 5780533
- 1879388 words of memory out of 5000000
- 50200 multiletter control sequences out of 15000+600000
- 591834 words of font info for 206 fonts, out of 8000000 for 9000
+ 30457 strings out of 476025
+ 611072 string characters out of 5780533
+ 1890388 words of memory out of 5000000
+ 50215 multiletter control sequences out of 15000+600000
+ 595580 words of font info for 212 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  101i,19n,96p,1172b,436s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/public/txf
@@ -1504,10 +1518,10 @@ usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/urw/times/utmb
 8a.pfb></usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/urw/t
 imes/utmr8a.pfb></usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 79570 bytes).
+Output written on main.pdf (2 pages, 95129 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
- 64 compressed objects within 1 object stream
- 19 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 95 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

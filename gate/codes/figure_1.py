@@ -1,19 +1,11 @@
-import numpy as np
 import matplotlib.pyplot as plt
 
-def x(n):
-    if n in [-1, 3]:  # excluding -1 and 3 from the domain where x(n) = 0
-        return 0
-    elif n == 0 or n == 2:
-        return 1/2
-    elif n == 1:
-        return 1
+# Read data from the file
+with open('data1.txt', 'r') as file:
+    x_values = [float(line.strip()) for line in file]
 
 # Define the range of n values
-n_values = np.arange(-1, 4)
-
-# Calculate corresponding x values
-x_values = [x(n) for n in n_values]
+n_values = range(-1, 4)
 
 # Plot the graph
 plt.stem(n_values, x_values)
