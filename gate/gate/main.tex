@@ -63,25 +63,25 @@ The discrete-time Fourier transform of a signal x\sbrak{n} is $X\brak{\Omega}=\b
     &=0,\text{for n= 3, 4}
 \end{align}
 Note that $x_p\sbrak{n}=\sum_{k=0}^{N-1}a_{k}e^{j\frac{2\pi}{N}kn}$. The magnitude of the Fourier series coefficient $a_3$ is \rule{3cm}{0.15mm} \brak{\text{Round off to 3 decimal places}}.\\
-\solution
-\begin{table}[h]
+\solution\\
+\begin{table}[h!]
     \centering
     \input{tables/table1.tex}
     \caption{variable description}
     \label{tab:my_label}
-\end{table}
+\end{table}\\
 Using Euler's form of representation of complex numbers,
 \begin{align}
     e^{j\Omega}=\cos{\Omega}+j\sin{\Omega}
 \end{align}
 $X\brak{\Omega}$ can be expressed as,
 \begin{align}
-    X\brak{\Omega}=\brak{1+\frac{e^{j\Omega}}{2}+\frac{e^{-j\Omega}}{2}}e^{-j\Omega}\\
     X\brak{\Omega}=\frac{1}{2}+e^{-j\Omega}+\frac{e^{-j2\Omega}}{2}
 \end{align}
 As sampling frequency is $1Hz$ \brak{\omega=\Omega} from DTFT(discrete time fourier transform) we get,
 \begin{align}
-    X\brak{\Omega}=\sum^{\infty}_{n=-\infty}x\brak{n}e^{-j\omega n},   \omega \in \brak{-\pi,\pi}
+    X\brak{\Omega}&=\sum^{n=2}_{n=0}x\brak{n}e^{-j\omega n},   \omega \in \brak{-\pi,\pi}\\
+    X\brak{\Omega}&=\frac{1}{2}+e^{-j\Omega}+\frac{e^{-j2\Omega}}{2}
 \end{align}
 On comparing coefficients we get,
 \begin{align}
@@ -107,5 +107,11 @@ On comparing coefficients we get,
     \includegraphics[width=\columnwidth]{figs/Figure_2.png}
     \caption{Plot of $x_p(n)$ $vs$ n}
     \label{fig:50.2}
+\end{figure}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\columnwidth]{figs/Figure_3.png}
+    \caption{Plot of $x_p(n)$ $vs$ n}
+    \label{fig:50.3}
 \end{figure}
 \end{document}
