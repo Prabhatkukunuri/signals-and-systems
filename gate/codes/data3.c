@@ -1,25 +1,36 @@
 #include <stdio.h>
 #include <math.h>
-#include <complex.h> // Include complex.h for complex number support
+#include <complex.h> 
 
-#define N 10 // You can change the value of N as needed
+#define N 5 // Period of the function
 
-double complex a_k(int k, double x[], int size) {
+double x(int n) {
+    switch (n % N) {
+        case 0: return 0.5;
+        case 1: return 1.0;
+        case 2: return 0.5;
+        case 3: return 0.0;
+        case 4: return 0.0;
+    }
+    return 0.0; // Default value (shouldn't reach here)
+}
+
+double complex a_k(int k, int size) {
     double sum_real = 0.0;
     double sum_imag = 0.0;
     int n;
 
     for (n = 0; n < size; n++) {
         double angle = -2 * M_PI * k * n / N;
-        sum_real += x[n] * cos(angle);
-        sum_imag += x[n] * sin(angle);
+        double xn = x(n);
+        sum_real += xn * cos(angle);
+        sum_imag += xn * sin(angle);
     }
 
-    return (sum_real + sum_imag * I) / N;
+    return (sum_real + sum_imag * I) / size;
 }
 
 int main() {
-    double x[N] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; // Sample input values for x[n]
     int k;
     FILE *fp;
 
@@ -30,11 +41,13 @@ int main() {
     }
 
     for (k = 0; k < N; k++) {
-        double complex result = a_k(k, x, N);
-        fprintf(fp, "%d %lf\n", k, creal(result)); // Extracting the real part of the result
+        double complex result = a_k(k, N);
+        double magnitude = cabs(result); // Calculate magnitude
+        fprintf(fp, "%d %lf %lf %lf\n", k, creal(result), cimag(result), magnitude); // Output real, imaginary, and magnitude parts
     }
 
     fclose(fp);
-    printf("Data written to file successfully.\n");
+    
+    printf("DFT coefficients calculated and written to file successfully.\n");
     return 0;
 }
